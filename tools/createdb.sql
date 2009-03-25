@@ -34,7 +34,7 @@ CREATE TABLE `user` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 INSERT INTO `user` (`uid`, `username`, `password`, `email`, `admin`) VALUES 
-(1, 'ranok', 'e347e6e075e2a9041399d73a4aa234c3', 'ranok@r4n0k.com', 1);
+(1, 'admin', 'sha1_password_hash', 'username@domain.com', 1);
 
 CREATE TABLE `news` (
   `nid` int(5) NOT NULL auto_increment,
