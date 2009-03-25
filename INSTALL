@@ -1,0 +1,9 @@
+To install Wiki Wide Web, the following steps are needed:
+
+1). Configure the lib/db.class.php mysql settings to reflect your setup
+2). Modify the tools/createdb.sql with your admin username, password hash and email
+3). Run the creatdb.sql on the database server to setup the initial database
+4). Ensure the cache directory is writable by the web server
+5). Modify tools/wikiwideweb/defaults/preferences/makePrefs.js to point to your server
+6). Build the firefox extension in tools using the Makefile
+7). Fix all the bugs that crop up
