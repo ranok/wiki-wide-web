@@ -1,0 +1,21 @@
+RewriteEngine on
+<Files ~ "\.(php|inc|config|cfg)(\~|\.bak|\.backup|\#)$">
+Order allow,deny
+Deny from all
+Satisfy All
+</Files>
+
+RewriteRule ^user/([a-zA-Z0-9]*)(/)?$ showuser.php?username=$1
+RewriteRule ^rss/user/([a-zA-z0-9]*)(/)?$ showuser.php?rss=1&username=$1
+RewriteRule ^statistics$ stats.php
+RewriteRule ^about$ about.php
+RewriteRule ^login$ login.php
+RewriteRule ^logout$ logout.php
+RewriteRule ^contact$ contact.php
+RewriteRule ^dosignup$ dosignup.php
+RewriteRule ^wikiwideweb.xpi$ tools/wikiwideweb/wikiwideweb.xpi
+RewriteRule ^doedit$ doEdit.php
+
+RewriteRule ^getdiffs/address/(.*)$ getDiffs.php?address=$1
+RewriteRule ^edit/address/(.*)$ edit.php?address=$1
+RewriteRule ^rate/did/([0-9]*)/dir/(.*)$ rate.php?did=$1&dir=$2

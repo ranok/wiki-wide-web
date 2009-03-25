@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://wikiwideweb/skin/wikiwideweb_overlay.css" type="text/css"?>
+<overlay id="wikiwideweb-Overlay" 
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script type="application/x-javascript" src="chrome://wikiwideweb/content/wwwlib.js"/>
+<toolbox id="navigator-toolbox">
+
+	<toolbar id="wikiwideweb-Toolbar" accesskey="W" class="chromeclass-toolbar" context="toolbar-context-menu" toolbarname="Wiki Wide Web" hidden="false" persist="hidden">
+	
+	<toolbarbutton label="Go to Wiki Wide Web Home" oncommand="gotoPage('http://www.wikiwideweb.net')"/>
+	<separator class="groove-thin"/>
+	<toolbarbutton id="www-status" disabled="disabled" label="WWW Status:" oncommand="refresh()"/>
+	<separator class="groove-thin"/>
+	<toolbarbutton id="www-enable" label="WWW Enabled" oncommand="toggle()"/>
+	<separator class="groove-thin"/>
+	<toolbarbutton label="Edit this page" oncommand="edit()"/>
+	<menulist>
+	<menupopup id="www-difflist">
+		<menuitem id="difftitle" label="Diffs on this page:" oncommand="gotoDiff(-1)"/>
+	</menupopup>
+	</menulist>
+	<toolbarbutton id="www-up" tooltiptext="Rate this diff favorably" oncommand="rank(1)"/>
+	<toolbarbutton id="www-down" tooltiptext="Rate this diff unfavorably" oncommand="rank(-1)"/>
+	<toolbarbutton id="www-warning" label="Don't enter personal information while enabled"/>
+	</toolbar>
+
+</toolbox>
+
+</overlay>

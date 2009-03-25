@@ -1,0 +1,9 @@
+Name: Wiki Wide Web
+Author: Jacob Torrey & Max Edmands
+License: MIT
+
+About:
+	This is the source code for a project I worked on my freshman year to create a system for users to edit the internet, much like a traditional wiki. It consisted of a backend server to store the diffs, and a Firefox extention to apply them, and let the user switch between them. It also let users rate diffs and make their own changed to the source code.
+
+NB:
+	This is rather messy code as it's an initial public release, I will try to clean it up in the next few weeks, but can make no promises.

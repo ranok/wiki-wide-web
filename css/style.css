@@ -1,0 +1,58 @@
+/*
+	Wiki Wide Web CSS
+	Copyright JIT Unleashed 2007
+*/
+div#title {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 20pt;
+}
+
+input#text {
+	border: 1px;
+}
+
+.white {
+	color: white;
+}
+
+input.submit {
+	border: 1px;
+}
+
+.small {
+	font-size: small;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+a {
+	color: white;
+}
+
+.big {
+	font-size: 16pt;
+}
+
+.margin {
+	margin-left: 1em;
+}
+
+.indent {
+	text-indent: 1em;
+}
+
+.bigger {
+	font-size: 25pt;
+}
+
+.center {
+	text-align: center;
+}
+
+.redborder {
+	border: solid red 2px;
+}

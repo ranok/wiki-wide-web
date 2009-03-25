@@ -1,0 +1,16 @@
+/*
+Wiki Wide Web extension CSS
+*/
+
+#www-warning {
+	color: red;
+	font-weight: bold;
+}
+
+#www-up {
+	list-style-image: url("chrome://wikiwideweb/skin/up.png");
+}
+
+#www-down {
+	list-style-image: url("chrome://wikiwideweb/skin/down.png");
+}
